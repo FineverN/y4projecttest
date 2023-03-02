@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+
+        android:id="@+id/nemo"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/aCuteButton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="10dp"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:background="#9CC2E5"
+            android:onClick="onBtnClick"
+            android:scaleType="fitCenter"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:src="@drawable/playbookbutton" />
+
+        <LinearLayout
+            android:id="@+id/right"
+            android:layout_width="10dp"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/aGoodButton"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="1"
+                android:background="#FEF1CB"
+                android:onClick="onBtnClick"
+                android:scaleType="fitCenter"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:src="@drawable/trackingbutton" />
+
+            <ImageButton
+                android:id="@+id/aKindButton"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="1"
+                android:background="#FEFEFE"
+                android:onClick="onBtnClick"
+                android:scaleType="fitCenter"
+                android:src="@drawable/linesbutton" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/finevern"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ACACAC"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/aaCuteButton2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="10dp"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:background="#D9C1EB"
+            android:onClick="onBtnClick"
+            android:scaleType="fitCenter"
+            android:src="@drawable/toolboxbutton" />
+
+        <ImageButton
+            android:id="@+id/aaGoodButton2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="10dp"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            android:background="#C4DFB3"
+            android:onClick="onBtnClick"
+            android:scaleType="fitCenter"
+            android:src="@drawable/tutorialsbutton" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

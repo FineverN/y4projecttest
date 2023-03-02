@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PlaybookDemo">
+
+    <RelativeLayout
+        android:id="@+id/playBookBgLayout"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="2"
+        android:background="#4CAF50"
+        tools:context="com.example.lenovo.androidstudy.MainActivity">
+
+
+        <ImageView
+            android:id="@+id/aDisc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_centerInParent="true"
+            android:background="@drawable/fieldverticalfocus"
+            android:scaleX="1.02"
+            android:translationX="2dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/playBookControl"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#EDEDED"
+            android:orientation="horizontal">
+
+            <ImageButton
+
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="10dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:contextClickable="false"
+                android:cursorVisible="false"
+                android:onClick="onAddClick"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:src="@drawable/adddisc"
+                android:text="Play"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                app:strokeColor="#FFFFFF" />
+
+            <ImageButton
+
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="10dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="onPlayClick"
+                android:src="@drawable/undoadd"
+                android:text="Play"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+            <ImageButton
+
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="10dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="onStartClick"
+                android:src="@drawable/setkeyframe"
+                android:text="Play"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+            <ImageButton
+
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="10dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="onEndClick"
+                android:src="@drawable/confirmanim"
+                android:text="Play"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+
+            <ImageButton
+
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="10dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="onBtnClick"
+                android:src="@drawable/playbook"
+                android:text="Play"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/setstartbutton"
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:onClick="onStartClick"
+            android:text="Start Flag"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/setendbutton"
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:onClick="onEndClick"
+            android:text="End Flag"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/playbutton"
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:onClick="onPlayClick"
+            android:text="Play Demo"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/addbutton"
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:onClick="onAddClick"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>
